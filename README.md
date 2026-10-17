@@ -373,12 +373,10 @@ Planned checks:
 | Why multiple heads? | Parallel attention in different subspaces |
 | Why positional information? | Attention alone is order-blind |
 | Self- vs. cross-attention? | Cross-attention takes Q from one sequence and K/V from another |
-| Why O(T²)? | A `T×T` score matrix per head |
 | Why residuals? | Gradient flow and easier optimization of deep stacks |
 | Why LayerNorm? | Stable activations, independent of batch statistics |
 | Encoder vs. decoder? | Decoder adds causal masking (and cross-attention in seq2seq) |
 | BERT vs. GPT? | BERT = encoder stack, GPT = decoder stack |
-| Transformer vs. RNN? | Parallel over time and short paths between distant tokens, at O(T²) cost |
 
 ---
 
