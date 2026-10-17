@@ -94,4 +94,7 @@ def test_gradients_reach_all_parameters():
     out.sum().backward()
     for name, p in mha.named_parameters():
         assert p.grad is not None, f"no gradient for {name}"
+        if name == "w_k.bias":
+            # Softmax is shift-invariant, so the key bias has zero gradient.
+            continue
         assert p.grad.abs().sum() > 0, f"zero gradient for {name}"
