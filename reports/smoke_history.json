@@ -1,0 +1,57 @@
+{
+  "config": {
+    "tag": "smoke",
+    "epochs": 2,
+    "batch_size": 64,
+    "lr": 0.0005,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "grad_clip": 1.0,
+    "patience": 3,
+    "seed": 42,
+    "d_model": 128,
+    "heads": 4,
+    "d_ff": 512,
+    "layers": 2,
+    "dropout": 0.1,
+    "activation": "relu",
+    "max_len": 64,
+    "min_freq": 2,
+    "subset": 2000,
+    "norm_first": false,
+    "no_pos_enc": false
+  },
+  "params": 631554,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.7352474842071534,
+      "train_acc": 0.511,
+      "dev_loss": 0.6900865468410177,
+      "dev_acc": 0.5275229357798165,
+      "dev_f1": 0.6347517730496455,
+      "seconds": 13.6195650100708
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.6440703258514404,
+      "train_acc": 0.621,
+      "dev_loss": 0.6743688813043297,
+      "dev_acc": 0.5802752293577982,
+      "dev_f1": 0.5503685503685504,
+      "seconds": 15.585309267044067
+    }
+  ],
+  "best_dev_acc": 0.5802752293577982,
+  "test": {
+    "acc": 0.6444954128440367,
+    "precision": 0.680952380952381,
+    "recall": 0.6190476190476191,
+    "f1": 0.6485260770975056,
+    "tp": 143,
+    "fp": 67,
+    "fn": 88,
+    "tn": 138,
+    "loss": 0.6657976683126677
+  }
+}

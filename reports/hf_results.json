@@ -1,0 +1,36 @@
+{
+  "split": "test",
+  "n": 436,
+  "model": "distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+  "hf": {
+    "acc": 0.9220183486238532,
+    "precision": 0.9191489361702128,
+    "recall": 0.935064935064935,
+    "f1": 0.9270386266094421,
+    "tp": 216,
+    "fp": 19,
+    "fn": 15,
+    "tn": 186,
+    "params": 66955010,
+    "seconds": 36.99095296859741
+  },
+  "own": {
+    "acc": 0.8211009174311926,
+    "precision": 0.825531914893617,
+    "recall": 0.8398268398268398,
+    "f1": 0.8326180257510729,
+    "tp": 194,
+    "fp": 41,
+    "fn": 37,
+    "tn": 164,
+    "params": 2110466,
+    "seconds": 0.7750434875488281
+  },
+  "agreement": {
+    "both_correct": 346,
+    "only_a": 56,
+    "only_b": 12,
+    "both_wrong": 22,
+    "sign_test_p": 6.209495737562187e-08
+  }
+}

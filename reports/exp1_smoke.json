@@ -1,0 +1,70 @@
+{
+  "config": {
+    "heads": [
+      1,
+      4
+    ],
+    "seeds": [
+      0
+    ],
+    "epochs": 1,
+    "subset": 2000,
+    "d_model": 64,
+    "d_ff": 256,
+    "layers": 2,
+    "lr": 0.001,
+    "batch_size": 64,
+    "max_len": 64,
+    "tag": "exp1_smoke"
+  },
+  "runs": [
+    {
+      "best_epoch": 1,
+      "best_dev_acc": 0.5160550458715596,
+      "test_acc": 0.5389908256880734,
+      "test_f1": 0.6834645669291338,
+      "final_train_loss": 0.7010272331237793,
+      "final_dev_loss": 0.6913954096102933,
+      "seconds_per_epoch": 4.396880149841309,
+      "heads": 1,
+      "seed": 0,
+      "d_head": 64,
+      "params": 217474
+    },
+    {
+      "best_epoch": 1,
+      "best_dev_acc": 0.5091743119266054,
+      "test_acc": 0.536697247706422,
+      "test_f1": 0.684375,
+      "final_train_loss": 0.7007656059265137,
+      "final_dev_loss": 0.6924675735858602,
+      "seconds_per_epoch": 5.115724086761475,
+      "heads": 4,
+      "seed": 0,
+      "d_head": 16,
+      "params": 217474
+    }
+  ],
+  "summary": [
+    {
+      "heads": 1,
+      "d_head": 64,
+      "params": 217474,
+      "test_acc_mean": 0.5389908256880734,
+      "test_acc_std": 0.0,
+      "dev_acc_mean": 0.5160550458715596,
+      "train_loss_mean": 0.7010272331237793,
+      "seconds_per_epoch": 4.396880149841309
+    },
+    {
+      "heads": 4,
+      "d_head": 16,
+      "params": 217474,
+      "test_acc_mean": 0.536697247706422,
+      "test_acc_std": 0.0,
+      "dev_acc_mean": 0.5091743119266054,
+      "train_loss_mean": 0.7007656059265137,
+      "seconds_per_epoch": 5.115724086761475
+    }
+  ]
+}
